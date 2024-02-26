@@ -7,33 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		866E76292B8D228000A01D17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866E76282B8D228000A01D17 /* AppDelegate.swift */; };
-		866E762B2B8D228000A01D17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866E762A2B8D228000A01D17 /* ViewController.swift */; };
-		866E762D2B8D228200A01D17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 866E762C2B8D228200A01D17 /* Assets.xcassets */; };
-		866E76302B8D228200A01D17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 866E762E2B8D228200A01D17 /* Main.storyboard */; };
-		866E76402B8D22AB00A01D17 /* LMERenderAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 866E763A2B8D22AB00A01D17 /* LMERenderAPI.framework */; };
-		866E76412B8D22AB00A01D17 /* LMERenderAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 866E763A2B8D22AB00A01D17 /* LMERenderAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7305A6072B8D282400008931 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7305A6062B8D282400008931 /* AppDelegate.swift */; };
+		7305A6092B8D282400008931 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7305A6082B8D282400008931 /* GameViewController.swift */; };
+		7305A60B2B8D282500008931 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7305A60A2B8D282500008931 /* Renderer.swift */; };
+		7305A6102B8D282500008931 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7305A60F2B8D282500008931 /* Assets.xcassets */; };
+		7305A6132B8D282500008931 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7305A6112B8D282500008931 /* Main.storyboard */; };
+		7305A6192B8D282F00008931 /* LMERenderAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 866E763A2B8D22AB00A01D17 /* LMERenderAPI.framework */; };
+		7305A61A2B8D282F00008931 /* LMERenderAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 866E763A2B8D22AB00A01D17 /* LMERenderAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		736873CA2B8D2C8600BE83FB /* ShaderKit.metal in Sources */ = {isa = PBXBuildFile; fileRef = 736873C92B8D2C8600BE83FB /* ShaderKit.metal */; };
+		736873D02B8D2C9D00BE83FB /* ShaderKit.metallib in Resources */ = {isa = PBXBuildFile; fileRef = 736873C72B8D2C8600BE83FB /* ShaderKit.metallib */; };
 		866E764C2B8D238C00A01D17 /* RenderPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866E764B2B8D238C00A01D17 /* RenderPipeline.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		866E763E2B8D22AB00A01D17 /* PBXContainerItemProxy */ = {
+		7305A61B2B8D282F00008931 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 866E761B2B8D225B00A01D17 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 866E76392B8D22AB00A01D17;
 			remoteInfo = LME_RenderAPI;
 		};
+		736873CE2B8D2C9900BE83FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 866E761B2B8D225B00A01D17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 736873C62B8D2C8600BE83FB;
+			remoteInfo = ShaderKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		866E76452B8D22AB00A01D17 /* Embed Frameworks */ = {
+		7305A61D2B8D282F00008931 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				866E76412B8D22AB00A01D17 /* LMERenderAPI.framework in Embed Frameworks */,
+				7305A61A2B8D282F00008931 /* LMERenderAPI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,22 +51,25 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		866E76252B8D228000A01D17 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		866E76282B8D228000A01D17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		866E762A2B8D228000A01D17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		866E762C2B8D228200A01D17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		866E762F2B8D228200A01D17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		866E76312B8D228200A01D17 /* Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Demo.entitlements; sourceTree = "<group>"; };
+		7305A6042B8D282400008931 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7305A6062B8D282400008931 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7305A6082B8D282400008931 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		7305A60A2B8D282500008931 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		7305A60F2B8D282500008931 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7305A6122B8D282500008931 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7305A6142B8D282500008931 /* Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Demo.entitlements; sourceTree = "<group>"; };
+		736873C72B8D2C8600BE83FB /* ShaderKit.metallib */ = {isa = PBXFileReference; explicitFileType = "archive.metal-library"; includeInIndex = 0; path = ShaderKit.metallib; sourceTree = BUILT_PRODUCTS_DIR; };
+		736873C92B8D2C8600BE83FB /* ShaderKit.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ShaderKit.metal; sourceTree = "<group>"; };
 		866E763A2B8D22AB00A01D17 /* LMERenderAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LMERenderAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		866E764B2B8D238C00A01D17 /* RenderPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderPipeline.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		866E76222B8D228000A01D17 /* Frameworks */ = {
+		7305A6012B8D282400008931 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				866E76402B8D22AB00A01D17 /* LMERenderAPI.framework in Frameworks */,
+				7305A6192B8D282F00008931 /* LMERenderAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,40 +83,83 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7305A6052B8D282400008931 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				7305A6142B8D282500008931 /* Demo.entitlements */,
+				7305A61F2B8D284D00008931 /* views */,
+				7305A61E2B8D284800008931 /* source */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		7305A6182B8D282F00008931 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7305A61E2B8D284800008931 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				7305A6062B8D282400008931 /* AppDelegate.swift */,
+				7305A6082B8D282400008931 /* GameViewController.swift */,
+				7305A60A2B8D282500008931 /* Renderer.swift */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		7305A61F2B8D284D00008931 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				7305A60F2B8D282500008931 /* Assets.xcassets */,
+				7305A6112B8D282500008931 /* Main.storyboard */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		736873C82B8D2C8600BE83FB /* ShaderKit */ = {
+			isa = PBXGroup;
+			children = (
+				736873C92B8D2C8600BE83FB /* ShaderKit.metal */,
+			);
+			path = ShaderKit;
+			sourceTree = "<group>";
+		};
+		736873D12B8D2CB000BE83FB /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				866E764B2B8D238C00A01D17 /* RenderPipeline.swift */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
 		866E761A2B8D225B00A01D17 = {
 			isa = PBXGroup;
 			children = (
-				866E76272B8D228000A01D17 /* Demo */,
 				866E763B2B8D22AB00A01D17 /* LME_RenderAPI */,
+				7305A6052B8D282400008931 /* Demo */,
+				736873C82B8D2C8600BE83FB /* ShaderKit */,
 				866E76262B8D228000A01D17 /* Products */,
+				7305A6182B8D282F00008931 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		866E76262B8D228000A01D17 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				866E76252B8D228000A01D17 /* Demo.app */,
 				866E763A2B8D22AB00A01D17 /* LMERenderAPI.framework */,
+				7305A6042B8D282400008931 /* Demo.app */,
+				736873C72B8D2C8600BE83FB /* ShaderKit.metallib */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		866E76272B8D228000A01D17 /* Demo */ = {
-			isa = PBXGroup;
-			children = (
-				866E76282B8D228000A01D17 /* AppDelegate.swift */,
-				866E762A2B8D228000A01D17 /* ViewController.swift */,
-				866E762C2B8D228200A01D17 /* Assets.xcassets */,
-				866E762E2B8D228200A01D17 /* Main.storyboard */,
-				866E76312B8D228200A01D17 /* Demo.entitlements */,
-			);
-			path = Demo;
 			sourceTree = "<group>";
 		};
 		866E763B2B8D22AB00A01D17 /* LME_RenderAPI */ = {
 			isa = PBXGroup;
 			children = (
-				866E764B2B8D238C00A01D17 /* RenderPipeline.swift */,
+				736873D12B8D2CB000BE83FB /* resource */,
 			);
 			path = LME_RenderAPI;
 			sourceTree = "<group>";
@@ -121,24 +177,40 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		866E76242B8D228000A01D17 /* Demo */ = {
+		7305A6032B8D282400008931 /* Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 866E76322B8D228200A01D17 /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildConfigurationList = 7305A6152B8D282500008931 /* Build configuration list for PBXNativeTarget "Demo" */;
 			buildPhases = (
-				866E76212B8D228000A01D17 /* Sources */,
-				866E76222B8D228000A01D17 /* Frameworks */,
-				866E76232B8D228000A01D17 /* Resources */,
-				866E76452B8D22AB00A01D17 /* Embed Frameworks */,
+				7305A6002B8D282400008931 /* Sources */,
+				7305A6012B8D282400008931 /* Frameworks */,
+				7305A6022B8D282400008931 /* Resources */,
+				7305A61D2B8D282F00008931 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				866E763F2B8D22AB00A01D17 /* PBXTargetDependency */,
+				736873CF2B8D2C9900BE83FB /* PBXTargetDependency */,
+				7305A61C2B8D282F00008931 /* PBXTargetDependency */,
 			);
 			name = Demo;
 			productName = Demo;
-			productReference = 866E76252B8D228000A01D17 /* Demo.app */;
+			productReference = 7305A6042B8D282400008931 /* Demo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		736873C62B8D2C8600BE83FB /* ShaderKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 736873CD2B8D2C8600BE83FB /* Build configuration list for PBXNativeTarget "ShaderKit" */;
+			buildPhases = (
+				736873C52B8D2C8600BE83FB /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShaderKit;
+			productName = ShaderKit;
+			productReference = 736873C72B8D2C8600BE83FB /* ShaderKit.metallib */;
+			productType = "com.apple.product-type.metal-library";
 		};
 		866E76392B8D22AB00A01D17 /* LME_RenderAPI */ = {
 			isa = PBXNativeTarget;
@@ -168,7 +240,10 @@
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
-					866E76242B8D228000A01D17 = {
+					7305A6032B8D282400008931 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					736873C62B8D2C8600BE83FB = {
 						CreatedOnToolsVersion = 15.2;
 					};
 					866E76392B8D22AB00A01D17 = {
@@ -190,19 +265,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				866E76242B8D228000A01D17 /* Demo */,
 				866E76392B8D22AB00A01D17 /* LME_RenderAPI */,
+				7305A6032B8D282400008931 /* Demo */,
+				736873C62B8D2C8600BE83FB /* ShaderKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		866E76232B8D228000A01D17 /* Resources */ = {
+		7305A6022B8D282400008931 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				866E762D2B8D228200A01D17 /* Assets.xcassets in Resources */,
-				866E76302B8D228200A01D17 /* Main.storyboard in Resources */,
+				736873D02B8D2C9D00BE83FB /* ShaderKit.metallib in Resources */,
+				7305A6102B8D282500008931 /* Assets.xcassets in Resources */,
+				7305A6132B8D282500008931 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,12 +293,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		866E76212B8D228000A01D17 /* Sources */ = {
+		7305A6002B8D282400008931 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				866E762B2B8D228000A01D17 /* ViewController.swift in Sources */,
-				866E76292B8D228000A01D17 /* AppDelegate.swift in Sources */,
+				7305A6092B8D282400008931 /* GameViewController.swift in Sources */,
+				7305A60B2B8D282500008931 /* Renderer.swift in Sources */,
+				7305A6072B8D282400008931 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		736873C52B8D2C8600BE83FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				736873CA2B8D2C8600BE83FB /* ShaderKit.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,18 +322,23 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		866E763F2B8D22AB00A01D17 /* PBXTargetDependency */ = {
+		7305A61C2B8D282F00008931 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 866E76392B8D22AB00A01D17 /* LME_RenderAPI */;
-			targetProxy = 866E763E2B8D22AB00A01D17 /* PBXContainerItemProxy */;
+			targetProxy = 7305A61B2B8D282F00008931 /* PBXContainerItemProxy */;
+		};
+		736873CF2B8D2C9900BE83FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 736873C62B8D2C8600BE83FB /* ShaderKit */;
+			targetProxy = 736873CE2B8D2C9900BE83FB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		866E762E2B8D228200A01D17 /* Main.storyboard */ = {
+		7305A6112B8D282500008931 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				866E762F2B8D228200A01D17 /* Base */,
+				7305A6122B8D282500008931 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -255,22 +346,9 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		866E761F2B8D225B00A01D17 /* Debug */ = {
+		7305A6162B8D282500008931 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-			};
-			name = Debug;
-		};
-		866E76202B8D225B00A01D17 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Release;
-		};
-		866E76332B8D228200A01D17 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -309,6 +387,8 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = RTSUG9QFR4;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -335,25 +415,25 @@
 					"@executable_path/../Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lme.Demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.open3d.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		866E76342B8D228200A01D17 /* Release */ = {
+		7305A6172B8D282500008931 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -392,6 +472,8 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = RTSUG9QFR4;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -412,16 +494,57 @@
 					"@executable_path/../Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lme.Demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.open3d.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		736873CB2B8D2C8600BE83FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RTSUG9QFR4;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		736873CC2B8D2C8600BE83FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RTSUG9QFR4;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		866E761F2B8D225B00A01D17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		866E76202B8D225B00A01D17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
 			};
 			name = Release;
 		};
@@ -608,20 +731,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7305A6152B8D282500008931 /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7305A6162B8D282500008931 /* Debug */,
+				7305A6172B8D282500008931 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		736873CD2B8D2C8600BE83FB /* Build configuration list for PBXNativeTarget "ShaderKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				736873CB2B8D2C8600BE83FB /* Debug */,
+				736873CC2B8D2C8600BE83FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		866E761E2B8D225B00A01D17 /* Build configuration list for PBXProject "LME" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				866E761F2B8D225B00A01D17 /* Debug */,
 				866E76202B8D225B00A01D17 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		866E76322B8D228200A01D17 /* Build configuration list for PBXNativeTarget "Demo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				866E76332B8D228200A01D17 /* Debug */,
-				866E76342B8D228200A01D17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
