@@ -2,16 +2,25 @@ import Metal
 import MetalKit
 import simd
 
+import LMERenderAPI
+
 class Renderer: NSObject, MTKViewDelegate {
 
     private var device: MTLDevice!
     private var commandQueue: MTLCommandQueue!
+    
+    private var testBUffer: VertexBuffer!
     
     init?(metalKitView: MTKView)
     {
         super.init()
         self.device = metalKitView.device
         self.commandQueue = device.makeCommandQueue()
+        
+        self.testBUffer = VertexBuffer(self.device, [
+            Vertex(pos: simd_float3(0.0, 1.0, 2.0), color: simd_float4(0.0, 0.0, 0.0, 0.0))
+        ])
+        
     }
 
     func draw(in view: MTKView)

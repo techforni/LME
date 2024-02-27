@@ -17,6 +17,7 @@
 		736873CA2B8D2C8600BE83FB /* ShaderKit.metal in Sources */ = {isa = PBXBuildFile; fileRef = 736873C92B8D2C8600BE83FB /* ShaderKit.metal */; };
 		736873D02B8D2C9D00BE83FB /* ShaderKit.metallib in Resources */ = {isa = PBXBuildFile; fileRef = 736873C72B8D2C8600BE83FB /* ShaderKit.metallib */; };
 		866E764C2B8D238C00A01D17 /* RenderPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866E764B2B8D238C00A01D17 /* RenderPipeline.swift */; };
+		867D2F5B2B8DD5B8001B23AF /* VertexBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867D2F5A2B8DD5B8001B23AF /* VertexBuffer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		736873C92B8D2C8600BE83FB /* ShaderKit.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ShaderKit.metal; sourceTree = "<group>"; };
 		866E763A2B8D22AB00A01D17 /* LMERenderAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LMERenderAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		866E764B2B8D238C00A01D17 /* RenderPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderPipeline.swift; sourceTree = "<group>"; };
+		867D2F5A2B8DD5B8001B23AF /* VertexBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VertexBuffer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				866E764B2B8D238C00A01D17 /* RenderPipeline.swift */,
+				867D2F5A2B8DD5B8001B23AF /* VertexBuffer.swift */,
 			);
 			path = resource;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				866E764C2B8D238C00A01D17 /* RenderPipeline.swift in Sources */,
+				867D2F5B2B8DD5B8001B23AF /* VertexBuffer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,7 +419,7 @@
 					"@executable_path/../Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -494,7 +498,7 @@
 					"@executable_path/../Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -620,7 +624,7 @@
 					"@loader_path/Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
@@ -708,7 +712,7 @@
 					"@loader_path/Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
